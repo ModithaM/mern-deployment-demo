@@ -52,7 +52,7 @@ cp .env.example .env
 npm start
 ```
 
-Backend should start on: http://localhost:5000
+Backend should start on: http://localhost:8080
 
 ### 3. Set Up Frontend (in new terminal)
 ```bash
@@ -114,7 +114,7 @@ Frontend should open automatically at: http://localhost:3000
 
 5. **Update backend/.env:**
    ```env
-   PORT=5000
+   PORT=8080
    NODE_ENV=development
    MONGODB_URI=mongodb+srv://admin:YOUR_PASSWORD@cluster0.xxxxx.mongodb.net/mern-demo?retryWrites=true&w=majority
    FRONTEND_URL=http://localhost:3000
@@ -139,7 +139,7 @@ Frontend should open automatically at: http://localhost:3000
 
 3. **Update backend/.env:**
    ```env
-   PORT=5000
+   PORT=8080
    NODE_ENV=development
    MONGODB_URI=mongodb://localhost:27017/mern-demo
    FRONTEND_URL=http://localhost:3000
@@ -149,7 +149,7 @@ Frontend should open automatically at: http://localhost:3000
 
 Update `frontend/.env`:
 ```env
-REACT_APP_API_URL=http://localhost:5000
+REACT_APP_API_URL=http://localhost:8080
 ```
 
 ---
@@ -199,7 +199,7 @@ Open browser and go to: http://localhost:3000
 
 **Health Check:**
 ```bash
-curl http://localhost:5000/api/health
+curl http://localhost:8080/api/health
 ```
 
 Expected response:
@@ -214,12 +214,12 @@ Expected response:
 
 **Get All Tasks:**
 ```bash
-curl http://localhost:5000/api/tasks
+curl http://localhost:8080/api/tasks
 ```
 
 **Create Task:**
 ```bash
-curl -X POST http://localhost:5000/api/tasks \
+curl -X POST http://localhost:8080/api/tasks \
   -H "Content-Type: application/json" \
   -d '{"title":"Test Task","description":"This is a test"}'
 ```

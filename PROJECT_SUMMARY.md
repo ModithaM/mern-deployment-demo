@@ -246,7 +246,7 @@ Want to adapt this for your needs?
 
 ### Backend (Azure App Service)
 ```bash
-PORT=5000                      # Server port
+PORT=8080                      # Server port
 NODE_ENV=production            # Environment
 MONGODB_URI=mongodb+srv://...  # Database connection
 FRONTEND_URL=https://...       # Frontend URL for CORS
